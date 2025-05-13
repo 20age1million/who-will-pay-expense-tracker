@@ -1,0 +1,8 @@
+#chartsContainer {
+    max-width: 900px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}

@@ -1,0 +1,50 @@
+/* topbar */
+.topbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #555555;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navigation button */
+.navBtn{
+    display: flex;
+    gap: 30px;
+}
+.navBtn button{
+    color: #333;
+    background-color: #F8F8FF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navBtn button:hover{
+    background-color: #D3D3D3;
+}
+
+/* back button */
+.backBtn {
+    position: absolute;
+    left: 10px;
+    background-color: #DCDCDC;
+    color: 333;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.backBtn:hover {
+    background-color: #808080
+}

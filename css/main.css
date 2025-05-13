@@ -1,0 +1,12 @@
+/* main.css import all css files together to be used in html file */
+
+/* base */
+@import "./base/base.css";
+
+/* topbar */
+@import "./topbar/topbar.css";
+
+/* pages */
+@import "./pages/container.css";
+@import "./pages/dataDisplay/dataDisplay.css";
+@import "./pages/writeNewPayment/writeNewPayment.css";

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who Will Pay</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="assets/pictures/thinking_face_icon.png">
+    <script defer type="module" src="js/main.js"></script>
+    <!-- import Chart.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  </head>
+  <body>
+    <!--top bar-->
+    <nav class="topbar">
+      <!--back button-->
+      <button class="backBtn" onclick="goBack()">Back</button>
+      <!--nav button that in center-->
+      <div class="navBtn">
+        <button onclick="showPage('dataDisplay')">Data Display</button>
+        <button onclick="showPage('nextPayment')">Next Payment</button>
+        <button onclick="showPage('writeNewPayment')">Write New Payment</button>
+      </div>
+    </nav>
+
+    <!--container for real page, adjusted in js file-->
+    <div id="content"></div>
+
+    <!--Data Display Page-->
+    <template id="dataDisplay">
+      <h2>Data Display</h2>
+      <div id="chartsContainer">
+        <canvas id="DDNumberChart" width="400" height="400"></canvas>
+        <canvas id="DDAmountChart" width="400" height="400"></canvas>
+      </div>
+      <div id="dataValues"></div>
+    </template>
+
+    <!--Next Payment Page-->
+    <template id="nextPayment">
+      <h2>Next Payment</h2>
+      <div id="spinWheelContainer">
+        <canvas id="paymentWheel" width="400" height="400"></canvas>
+        <br/>
+        <button id="spinPaymentButton">Spin the Payment Wheel!</button>
+      </div>
+    </template>
+
+    <!--Write New Payment Page-->
+    <template id="writeNewPayment">
+      <h2>Write New Payment</h2>
+      <div class="paymentForm">
+        <label for="payer">Select Payer</label>
+        <select id="payer" name="payer">
+            <option value="" disabled selected>(Not Selected)</option>
+            <!-- wait js to add automatically -->
+        </select>
+
+        <label for="payAmount">Enter amount</label>
+        <input type="text" id="payAmount" placeholder="Please enter amount">
+
+        <label for="payDate">Enter time</label>
+        <input type="date" id="payDate" placeholder="wait js to add default date">
+
+        <button onclick="submitPayment()">Submit!</button>
+      </div>
+    </template>
+
+    <!--Login Page-->
+    <template id="loginPage">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </template>
+  </body>
+</html>

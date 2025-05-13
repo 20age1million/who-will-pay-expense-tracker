@@ -1,0 +1,35 @@
+/* below is for paymentForm */
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paymentForm label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.paymentForm select, .paymentForm input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+.paymentForm button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #36A2EB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paymentForm button:hover {
+    background-color: #2b8bc0;
+}

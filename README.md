@@ -9,6 +9,6 @@
 - **Next Payer**: Weighted random selection of who pays next  
 - **Responsive**: Works on desktop and mobile browsers  
 
-## 🔧 Tech Stack
+## Tech Stack
 - HTML5, CSS3, Vanilla JavaScript  
 - [Chart.js](https://www.chartjs.org/) + [ChartDataLabels](https://chartjs-plugin-datalabels.netlify.app/)  

@@ -2,14 +2,13 @@ version: "3.9"   # Compose file format (3.9 works with Docker Compose v2)
 
 services:
   homepage:
-    container_name: homepage
-
+    container_name: WWP-frontend 
     # The image pushed by your CI/CD pipeline (must match .drone.yml build repo)
     # IMPORTANT: GHCR requires lowercase image names.
     # CHANGE `yourorg` → your GitHub org/user
     # CHANGE `<repo_name>` → your repo name (or with -frontend suffix)
     # Keep the tag part as ${TAG:-latest} so you can override with `TAG=<sha> docker compose up -d`
-    image: ghcr.io/20age1million/homepage:${TAG:-latest}
+    image: ghcr.io/20age1million/who-will-pay-expense-tracker:${TAG:-latest}
 
     ports:
       # host_port:container_port

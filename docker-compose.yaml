@@ -1,7 +1,7 @@
 version: "3.9"   # Compose file format (3.9 works with Docker Compose v2)
 
 services:
-  homepage:
+  WWP-frontend:
     container_name: WWP-frontend 
     # The image pushed by your CI/CD pipeline (must match .drone.yml build repo)
     # IMPORTANT: GHCR requires lowercase image names.

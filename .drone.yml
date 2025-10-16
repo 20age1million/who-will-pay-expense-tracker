@@ -62,7 +62,7 @@ steps:
           git -C "$REPO_DIR" reset --hard "origin/main";
         fi
       # Optional: pin to the exact commit being built
-      - git -C "$REPO_DIR" checkout -qf "${DRONE_COMMIT_SHA}" || true
+      # - git -C "$REPO_DIR" checkout -qf "${DRONE_COMMIT_SHA}" || true
 
   # 2) Build & push image to GHCR from THIS repo
   - name: build-push-ghcr

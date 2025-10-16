@@ -14,7 +14,7 @@ services:
       # host_port:container_port
       # Default here is "80:80" → serve on http://<server-ip>:80
       # CHANGE left side if host port is occupied (e.g., "3006:80")
-      - "3004:80"
+      - "3005:80"
 
     restart: unless-stopped
     # Ensures container is auto-restarted if it crashes or the daemon restarts.

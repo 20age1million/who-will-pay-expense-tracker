@@ -25,9 +25,7 @@ function showPage(pageID) {
   } else if (pageID === "nextPayment") {
     loadNextPayment();
   } else if (pageID === "writeNewPayment") {
-    loadLoginPage(() => {
-      loadWriteNewPayment();
-    });
+    loadWriteNewPayment();
   } else {
     document.getElementById("content").innerHTML =
       "<p>Error, no page found.</p>";

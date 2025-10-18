@@ -13,7 +13,7 @@ export function loadWriteNewPayment() {
   document.getElementById("payDate").value = today;
 
   // fetch names and fill into select person
-  fetch("/api/WWP/getDisplayData")
+  fetch("https://api.wwp.20age1million.com/getDisplayData")
   // fetch(`https://20age1million.com/api/WWP/getDisplayData`)
     .then((res) => res.json())
     .then((nameDict) => {
@@ -45,7 +45,7 @@ export function submitPayment() {
 
   const data = { name: name, amount: amount, time: date };
 
-  fetch("https://20age1million.com/api/WWP/writeNewPayment", {
+  fetch("https://api.wwp.20age1million.com/writeNewPayment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

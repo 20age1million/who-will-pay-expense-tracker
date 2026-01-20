@@ -12,7 +12,7 @@ export function loadNextPayment() {
   }
 
   fetch(
-    `https://api.wwp.20age1million.com/getNextPayment?ts=${Date.now()}`
+    `https://apiwwp.20age1million.com/getNextPayment?ts=${Date.now()}`
   )
     .then((response) => response.json())
     .then((data) => {

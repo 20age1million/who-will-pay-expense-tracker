@@ -32,7 +32,7 @@ export function loadDataDisplay() {
 
   let dataValues = document.getElementById("dataValues");
 
-  fetch(`https://api.wwp.20age1million.com/getDisplayData?ts=${Date.now()}`)
+  fetch(`https://apiwwp.20age1million.com/getDisplayData?ts=${Date.now()}`)
     .then((response) => response.json())
     .then((data) => {
       console.log("Data received:", data);
